@@ -4,20 +4,22 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 interface Shift {
   employeeName: string;
   role: string;
-  startTime: string;  // datetime-local フォーマット
-  endTime: string;    // datetime-local フォーマット
-  breakTime: number;  // 休憩時間（分）
+  startTime: string;
+  endTime: string;
+  breakTime: number;
   storeLocation: string;
-  status: string;     // 状態（確定、仮、キャンセル）
-  createdAt: string;  // ISO 8601 日時
-  updatedAt: string;  // ISO 8601 日時
+  status: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  standalone: false
 })
+
 export class AppComponent {
   shift: Shift = {
     employeeName: '',
@@ -26,7 +28,7 @@ export class AppComponent {
     endTime: '',
     breakTime: 0,
     storeLocation: '',
-    status: '仮', // 初期状態は「仮」
+    status: '仮',
     createdAt: '',
     updatedAt: ''
   };
@@ -58,7 +60,7 @@ export class AppComponent {
         endTime: '',
         breakTime: 0,
         storeLocation: '',
-        status: '仮',  // 初期値に戻す
+        status: '仮',
         createdAt: '',
         updatedAt: ''
       };
