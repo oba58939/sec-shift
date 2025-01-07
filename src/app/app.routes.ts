@@ -1,11 +1,10 @@
-import { Routes } from '@angular/router';
-import { provideRouter } from '@angular/router';
-import { AppComponent } from './app.component';
+import { Routes, provideRouter } from '@angular/router';
+import { AppComponent } from './app.component';  // AppComponent をインポート
 
-export const appRoutes: Routes = [
+export const routes: Routes = [
   { path: '', component: AppComponent } // ルートパスに AppComponent を割り当て
 ];
 
 export const appRoutingProviders = [
-  provideRouter(appRoutes)
+  provideRouter(routes)  // provideRouter を使ってルート設定
 ];
