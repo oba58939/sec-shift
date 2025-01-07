@@ -23,6 +23,7 @@ const firebaseConfig = {
     AngularFirestoreModule,
     FormsModule  // 追加
   ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

@@ -6,7 +6,8 @@ export const environment = {
         projectId: "sec-shift",
         storageBucket: "sec-shift.firebasestorage.app",
         messagingSenderId: "434468061571",
-        appId: "1:434468061571:web:09a90b9a163e69e6b176b6"
+        appId: "1:434468061571:web:09a90b9a163e69e6b176b6",
+
     }
   };
   
