@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/compat/firestore';
+import { AngularFirestore } from '@angular/firestore';
 
 interface Shift {
   employeeName: string;
@@ -64,7 +64,7 @@ export class AppComponent {
         createdAt: '',
         updatedAt: ''
       };
-    }).catch(error => {
+    }).catch((error: any) => {
       console.error('シフトの保存に失敗しました:', error);
     });
   }
