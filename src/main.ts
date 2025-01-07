@@ -3,6 +3,11 @@ import { AppComponent } from './app/app.component';
 import { appRoutingProviders } from './app/app.routes';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
+import { environment } from './environments/environments';
+
+// Firebase アプリの初期化
+initializeApp(environment.firebaseConfig);
+
 
 bootstrapApplication(AppComponent, {
   providers: [
