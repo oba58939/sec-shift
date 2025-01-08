@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AngularFirestore } from '@angular/firestore';
+import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 interface Shift {
   employeeName: string;
